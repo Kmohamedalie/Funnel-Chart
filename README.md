@@ -1,4 +1,4 @@
-# Capturing the customer journey using a funnel chart
+# Customer analytics - capturing the customer journey using a funnel
 
 
 
