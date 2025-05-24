@@ -1,4 +1,4 @@
-# Funnel Chart Visualization - Capturing the customer journey using a funnel chart
+# Capturing the customer journey using a funnel chart
 
 This notebook explores the creation and interpretation of funnel charts, a powerful visualization tool for understanding multi-stage processes like sales or marketing pipelines.
 
