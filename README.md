@@ -1,4 +1,4 @@
-# Customer analytics - capturing the customer journey using a funnel
+# capturing the customer journey using a funnel
 
 
 
