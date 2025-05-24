@@ -1,6 +1,17 @@
 # Capturing the customer journey using a funnel chart
 
-This notebook explores the creation and interpretation of funnel charts, a powerful visualization tool for understanding multi-stage processes like sales or marketing pipelines.
+
+
+https://github.com/user-attachments/assets/1011302a-4dfd-4549-9b22-4baaba20836b
+
+
+<br>
+
+
+
+
+This [notebook](https://github.com/Kmohamedalie/Funnel-Chart-Customer_Analytics/blob/master/Funnel_Chart_%F0%9F%8C%AA%EF%B8%8F%F0%9F%93%88.ipynb) explores the creation and interpretation of funnel charts, a powerful visualization tool for understanding multi-stage processes like sales or marketing pipelines.
+
 
 ## Contents
 
@@ -19,3 +30,14 @@ The examples using pre-defined data for Plotly and Matplotlib were provided as p
 ## Analysis
 
 The notebook includes a summary analysis of a funnel chart, explaining its marketing significance and how it can be used to identify bottlenecks and improve conversion rates.
+
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/53a058b4-38b8-4f3e-a0cd-4d78afdcd379)
+
+</div>
+
+
+
+
+
