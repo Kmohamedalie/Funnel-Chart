@@ -1,0 +1,343 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.25.0114.1153                               -->
+<workbook original-version='18.1' source-build='2024.3.3 (20243.25.0114.1153)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='funnel_data2+' inline='true' name='federated.0mus1cl1tjt2h91ey1ezw1qk84qt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='funnel_data2' name='textscan.1g6v7t619syw8f14hj8ul0ndk1ng'>
+            <connection class='textscan' directory='C:/Users/mediaworld/Downloads' filename='funnel_data2.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1g6v7t619syw8f14hj8ul0ndk1ng' name='funnel_data2.csv' table='[funnel_data2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='string' name='Stage' ordinal='0' />
+            <column datatype='integer' name='Value' ordinal='1' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[funnel_data2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Stage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Stage]</local-name>
+            <parent-name>[funnel_data2.csv]</parent-name>
+            <remote-alias>Stage</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[funnel_data2.csv_40AAEB1F5BA34C8A8C61244EE18F3395]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Value</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Value]</local-name>
+            <parent-name>[funnel_data2.csv]</parent-name>
+            <remote-alias>Value</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[funnel_data2.csv_40AAEB1F5BA34C8A8C61244EE18F3395]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Stage]' role='dimension' type='nominal' />
+      <column caption='funnel_data2.csv' datatype='table' name='[__tableau_internal_object_id__].[funnel_data2.csv_40AAEB1F5BA34C8A8C61244EE18F3395]' role='measure' type='quantitative' />
+      <column-instance column='[Stage]' derivation='None' name='[none:Stage:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/MEDIAW~1/AppData/Local/Temp/TableauTemp/#TableauTemp_1ffpplt1kfuvy21fg3r9o0et6vz8.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/25/2025 11:16:24 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Stage</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Stage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Stage</remote-alias>
+              <ordinal>0</ordinal>
+              <family>funnel_data2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[funnel_data2.csv_40AAEB1F5BA34C8A8C61244EE18F3395]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Value</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Value</remote-alias>
+              <ordinal>1</ordinal>
+              <family>funnel_data2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[funnel_data2.csv_40AAEB1F5BA34C8A8C61244EE18F3395]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Stage:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Closed Deal&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Proposal Sent&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Negotiation&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Lead Qualified&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Initial Contact&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;France&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='funnel_data2.csv' id='funnel_data2.csv_40AAEB1F5BA34C8A8C61244EE18F3395'>
+            <properties context=''>
+              <relation connection='textscan.1g6v7t619syw8f14hj8ul0ndk1ng' name='funnel_data2.csv' table='[funnel_data2#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='string' name='Stage' ordinal='0' />
+                  <column datatype='integer' name='Value' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Funnel Chart'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Tableau Bold'>Funnel Chart</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='funnel_data2+' name='federated.0mus1cl1tjt2h91ey1ezw1qk84qt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0mus1cl1tjt2h91ey1ezw1qk84qt'>
+            <column datatype='string' name='[Stage]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Value]' role='measure' type='quantitative' />
+            <column-instance column='[Stage]' derivation='None' name='[none:Stage:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Value]' derivation='Sum' name='[pcto:sum:Value:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[Value]' derivation='Sum' name='[sum:Value:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0mus1cl1tjt2h91ey1ezw1qk84qt].[none:Stage:nk]'>
+            <groupfilter function='level-members' level='[none:Stage:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <computed-sort column='[federated.0mus1cl1tjt2h91ey1ezw1qk84qt].[none:Stage:nk]' direction='DESC' using='[federated.0mus1cl1tjt2h91ey1ezw1qk84qt].[sum:Value:qk]' />
+          <slices>
+            <column>[federated.0mus1cl1tjt2h91ey1ezw1qk84qt].[none:Stage:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.0mus1cl1tjt2h91ey1ezw1qk84qt].[none:Stage:nk]' value='12' />
+            <format attr='font-weight' field='[federated.0mus1cl1tjt2h91ey1ezw1qk84qt].[none:Stage:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0mus1cl1tjt2h91ey1ezw1qk84qt].[none:Stage:nk]' />
+              <size column='[federated.0mus1cl1tjt2h91ey1ezw1qk84qt].[sum:Value:qk]' />
+              <text column='[federated.0mus1cl1tjt2h91ey1ezw1qk84qt].[none:Stage:nk]' />
+              <text column='[federated.0mus1cl1tjt2h91ey1ezw1qk84qt].[pcto:sum:Value:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='12'><![CDATA[<[federated.0mus1cl1tjt2h91ey1ezw1qk84qt].[none:Stage:nk]>]]></run>
+                <run><![CDATA[
+<[federated.0mus1cl1tjt2h91ey1ezw1qk84qt].[pcto:sum:Value:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run><![CDATA[<[federated.0mus1cl1tjt2h91ey1ezw1qk84qt].[usr:Calculation_1149262343773401088:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-weight' value='normal' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0mus1cl1tjt2h91ey1ezw1qk84qt].[sum:Value:qk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{09DB50A1-E053-441E-BED3-0C2A56C403F2}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' show-side-pane='false' source-height='37'>
+    <window class='worksheet' maximized='true' name='Funnel Chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0mus1cl1tjt2h91ey1ezw1qk84qt].[none:Stage:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0mus1cl1tjt2h91ey1ezw1qk84qt].[none:Stage:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0mus1cl1tjt2h91ey1ezw1qk84qt].[sum:Value:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight field='[federated.0mus1cl1tjt2h91ey1ezw1qk84qt].[none:Stage:nk]'>
+          <bucket-selection />
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A6BFDD36-53BB-4A56-A7BD-ABAF0E090A0A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Funnel Chart' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAKsklEQVR4nO3dSW8b5x3H8e8MySGp3ZK1RBJlSXa8yHZcuEnQQ4HeeypSBM2ht556CQq0
+      L6EFChQ9FOgbKHpN2lwK9JgUXZE6sRPbkmhRmyVK1kaJFLfhLD3YSSMYSUhHlDx+fh/AMESI
+      xN82v57RkA8fKwzDEBFD2ac9gMhpalsAQRC066FFjk3bAtCZlUSBToHEaE0H4Lk1ag2fwPfY
+      evQI1wtwa2V294sAHBR2qdYbbRtUpB2sZq4Chb5H9s6/CIaukS6vY3f1UygcYHs1UskYqY4e
+      9ms+fq3KKzeuYQO+7xOLxU7gjyDy7Jo6AlixOFNTU9iWRSqdZCO/TtyJkUj2MTY6wub6DuMT
+      GbqdOF4Y4vu+fgaQSIg3802B77K8vMJ6rZOwJ053dzdu3Sf0iswv7DAxPcbC7CyxWIJpy8KK
+      xfB9v92zi3xjzZ0ChSGu6wKQSCRoNBokEg6EAV4Q4iTiNBoudixOzH58UNEpkERBUwE8CwUg
+      UdDUKZDJgtIm9X/+/rTHkDZRAF8jrBfx7r932mNIm+iFMDGaAhCjKQAxmgIQoykAMZoCEKMp
+      ADGaAhCjKQAxmgIQoykAMZoCEKMpADFaU+8GDQOf3L2PiA9fZjjt8WBxlaGxSap76xTKDS5f
+      Ps/8bJZ0zwCXLpzDavfUIsekuSOAZTE6Mki94bOSW8C3bOpumbqf5NLkMPOfZslcukq8UdWa
+      YImU5hbFWzbx+OODRSKZYvrlSxzubeP5Lm69hpNMUK25uL6PDdi2jWXpOCDPv6YC8L06C6tb
+      HG4/ZOTcedZzWQbHphkZ6GLzwOfy9Rlq26v0Dr5EzLL05JfI0Jrgr+HvZKn88Y3THkPaRFeB
+      xGgKQIymAMRoCkCMpgDEaApAjKYAxGgKQIymAMRoCkCMpgDEaApAjKYAxGgKQIymAMRoTQcQ
+      hsHnyxzDICAIQ8IwwPcDAALfJ9AySImY5hbF+x6zH/8dhm8wM97L3f++jzVwHYor1L2AzMQE
+      Sw/zxBMpbt6Y0aJ4iYymN8q+cP4CMdtiO7/K2fFJbFziqQGuXJxkNbfGxavX6HNsGloULxHS
+      9MeilEolytWQrnTIztY62/VehjoDNjbLDI0OkF/L03A94paFrY2yJSKaCyAMqNtdDHZaDL00
+      xej4OPWGhRXUKFY8Bgf6KOxs4WRG9VO1REpTAdixBKPjmS/ckiCVBOhiMP34ljNnh459OJF2
+      03/YYjQFIEZTAGI0BSBGUwBiNAUgRlMAYjQFIEZTAGI0BSBGUwBiNG2Q8TXCMADf+0aPsfHz
+      X+BtbR3TRHKcmnoznMksy4a4880eJLQf/5Lnjv5VxGgKQIzWXABhSO1wn2LFJfBcsnOzFCsu
+      5YNdlh5uEIYh6ys5CqVqm8cVOV5NBRAGPmu5WfKFCuXyIZmpKRYfzJFbzpMOS+SyWarxXh4u
+      LhC0e2KRY9T0oviJiQwW0NGRZmF+nskLkzhOFz29fezvlejv76HTSWineImUpq4C+V6d7INF
+      Nt0Ogh2bqh+jeFAHb5/72R0uXJkme/cTkh09JCwLS4viJSL0OsAJyL/9M70O8JzSVSAxmgIQ
+      oykAMZoCEKMpADGaAhCjKQAxmgIQoykAMZoCEKMpADGaAhCjKQAxmgIQoykAMZoCEKM1tyY4
+      DFnNfkp+r0LtsMDt2x+zVSiTX8lx59P7eF6Du3dus/RwEy2ElChp8lMhAnq605SqLutrm1y5
+      foOdjUUOygHTo73cu32XwenLuKUCfhgSBIHWBEskNLco3o7RkUodvc367HeLz57r1rGOJtJ+
+      TwUQhgGry0sUi4cET57YvldnYTnP3sYyA8NDzH5yhzNDk3SnIbdWYOZbM2zlZol19hKzLGzb
+      xrKUgzz/nloUv7dymz/9bZbvXMzQc/W7THQ92wNrUfz/aVH88+upI0D32Qk6wxof5bYY7jiN
+      kUROzlMB1CqHWE4av35AxT2NkUROzlMBJLvO8Oqrr/LycC8VfbaVvOCeCiDwGuzv79N17hqj
+      OgWSF9yRj0asl7Z5972/0PABy2Ji+iL96VOaTOQEHDkCJLsH+f73bnJQKmOFFoGuZMoL7qlT
+      ICfdzeuvvYptW3phS154RwJwD3f56we3SHf38+Zbb9Gf+rK7ibwYjgTgdA3wxhs/wC+s8Ntf
+      /4qt8mmNJXIyjgRQP9zj3Xfe4cBP85Ofvs2QrgLJC+7IVSCn8ww/fPNHeh+PGONIAHrii2m0
+      IkyMpgDEaApAjNbULpFfFPgeOzu79A0MglfjsObR39fDQWEXp6OHdDLRjjkjLT4yDImW/6pP
+      TKG8S7Vh5ibnLe8SuTx/F6urn/3CAbZXI+XESHX2sl/18OtVXrlxDRstiImS333wG/6z8o/T
+      HuNUtHwKlEon2cyvE3diJJJ9jI2NsLm+zfi5DN1OXBtlS6S0fFyulOt09/Tg1n1Cr8j8wi4T
+      06MszM4SiyWY1kbZEiEtBzB1eQbXbZBIOBAGeEGAk0jQ338WOx7XG+gkUloOwLJsksnkk69i
+      OE/O8xOOc5xziZwIXQYVoykAMZoCEKMpADGaAhCjKQAxmgIQoykAMZoCEKMpADGaAhCjKQAx
+      mgIQoykAMZoCEKO1HIDv1cnO3We7UGLv0TpzD5YIAp/c/H02tvfbMaNI27QcwFruAWU3IJGw
+      yG8VGeqCubuzJAbGKWyuoYWQEiUtB1Cp1Ji6cIGVxSzxeJJkKk2t6tKRTuLE4wRaFC8R0nIA
+      mckMi3OzdPWO4NhV5pc2uXT9ZVbn7tGIp4hbFrFYTJ8zKpHQ8prgrjPD3Dwz/OSr0c9vv/nt
+      m8c1k8iJ0VUgMZoCEKMpADGaAhCjKQAxmgIQoykAMVrL+wM0S/sDREf+YJ3DerHl+5UbLn+4
+      9WEbJjo5z++2JXJiRnvHgLGW71es1Ug6q8c/0AnSKZAYTQGI0RSAGE0BiNEUgBhNAYjRnimA
+      MAwIw5AwDAiCAIAg0CowiZ7WXwcIA+5++D7WwHUorlDzAiYmJlhazRN3Uty8MaOdIiUyWj4C
+      bOdXOTs+iY1LPDXAzMVJVnNrXLx2jT7HpqE1wRIhLR8B/CBk69E62/VehjoDNjfLDL40QH4t
+      T8P1iFsWtjbKlohoOYCRzBTDY+PUGxZWUOOg4jE00Edh5xFOZlQ/VUukPNN7gSw7QSoJ0MVQ
+      +vFtZ84Of9VdRJ5L+g9bjKYAxGgKQIymAMRoCkCMpgDEaApAjKYAxGgKQIymAMRoCkCMpgDE
+      aApAjKZPhpNnlojZ3BgZ/crvafgB/763dkITtU6fDSptVarU+fEv/3zaY3yplk+BAs8lOzdL
+      seJSOdhl6eEGYRiyvpKjUKq2Y0aRtmk5gPLhIZnJKRYfzLGwnCcdlMhls1TjvTxcXCBox5Qi
+      bdJyAB2daXLZeSbPT+I4XfT09bG/V6K/v4dOJ4GnRfESIS0HsJydpeKFFIt18Pa5n13h/OUp
+      Fu5+QimwSWijbImQlq8Cnb96k/OffTE6+Pntr782cEwjiZwcvQ4gRlMAYjQFIEZTAGI0BSBG
+      UwBiNAUgRlMAYjQFIEZTAGI0BSBGUwBiNAUgRjuWAPz6Ibdu3eJedgmtApAoOZYA9ja3mLxy
+      naRfR1vjSZQcSwCOY3NYrlL3PO0RLJFyLAH0jmTw9zcYGM2gz4GQKPkfhsHoPqUGzI8AAAAA
+      SUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
