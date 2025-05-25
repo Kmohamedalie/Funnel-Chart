@@ -38,6 +38,19 @@ The notebook includes a summary analysis of a funnel chart, explaining its marke
 </div>
 
 
+**[Power BI](https://github.com/Kmohamedalie/Funnel-Chart/blob/master/Funnel%20Chart%20-%20Power%20BI.pbix)**:
+
+
+
+https://github.com/user-attachments/assets/e4338a32-7b22-4fbf-89d6-80fe43023e63
+
+
+
+<br>
+
+
+
+
 
 
 
